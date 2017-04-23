@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-def set_journal(fig_width=245.26653):
+def set_journal(fig_width=245.26653, height_factor=1.):
     """
     Sets the matplotlib rc params to generate plots that are the proper
     size for two column journals. Simple specify the column width
@@ -14,7 +14,7 @@ def set_journal(fig_width=245.26653):
     inches_per_pt = 1.0/72.27               # Convert pt to inch
     golden_mean = (np.sqrt(5)-1.0)/2.0         # Aesthetic ratio
     fig_width = fig_width_pt*inches_per_pt  # width in inches
-    fig_height = fig_width*golden_mean      # height in inches
+    fig_height = fig_width*golden_mean * height_factor      # height in inches
     fig_size =  [fig_width,fig_height]
     params = {'backend': 'ps',
               'axes.labelsize': 10,
