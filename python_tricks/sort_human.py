@@ -1,3 +1,5 @@
+import re
+
 def sort_human(l):
     """
     sort a list with indices and letters the way a human would
