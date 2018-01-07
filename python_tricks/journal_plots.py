@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+import numpy as np
+
 
 def set_journal(fig_width=245.26653, height_factor=1.):
     """
